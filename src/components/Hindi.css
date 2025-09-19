@@ -1,0 +1,33 @@
+.brsr-table .table-list .cell-style {
+  padding: "4px";
+  line-height: 1.2;
+  font-size: 11px;
+}
+
+.brsr-search .brsr-form-submit-style,
+.brsr-table-actions .brsr-form-submit-style {
+  padding: 9px;
+  line-height: 1.2;
+  font-size: 13px;
+  background-color: #0075be !important;
+}
+
+.brsr-form-style {
+  padding: 9px !important;
+  line-height: 1.2 !important;
+  font-size: 13px !important;
+}
+
+.brsr-action-link-style {
+  color: #3bbdf5;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.brsr-table .brsr-header-cell-style {
+  padding: 4px;
+  line-height: 1.2;
+  font-size: 11px;
+  color: #ffffff !important;
+  background-color: #0075be !important;
+}

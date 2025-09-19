@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import TableComponent from './components/TableComponent';
+import FormComponent from './components/FormComponent';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigate to="/brsr-1" />} />
+      <Route path="/brsr-1" element={<TableComponent />} />
+      <Route path="/brsr-1/add" element={<FormComponent mode="add" />} />
+      <Route path="/brsr-1/edit/:id" element={<FormComponent mode="edit" />} />
+      <Route path="/brsr-1/view/:id" element={<FormComponent mode="view" />} />
+    </Routes>
   );
 }
 
