@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { HashRouter } from "react-router-dom";
+import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+class WebComponent extends HTMLElement {
+  connectedCallback() {
+    const root = createRoot(this);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    const route = this.getAttribute("route") || "/";
+
+    root.render(
+      <React.StrictMode>
+        <HashRouter>
+          <App route={route} />
+        </HashRouter>
+      </React.StrictMode>
+    );
+  }
+}
+
+const ELEMENT_NAME = "advocate-empanelled";
+
+if (!customElements.get(ELEMENT_NAME)) {
+  customElements.define(ELEMENT_NAME, WebComponent);
+} else {
+  console.log(
+    `Skipping registration for <${ELEMENT_NAME}> (already registered)`
+  );
+}
