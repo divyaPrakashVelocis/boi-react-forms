@@ -1,0 +1,33 @@
+.online-branch-table .table-list .cell-style {
+    padding: "4px";
+    line-height: 1.2;
+    font-size: 11px;
+}
+
+.online-branch-search .online-branch-form-submit-style,
+.online-branch-table-actions .online-branch-form-submit-style {
+    padding: 7px;
+    line-height: 1.2;
+    font-size: 13px;
+    background-color: #0075be !important;
+}
+
+.online-branch-form-style {
+    padding: 7px !important;
+    line-height: 1.2 !important;
+    font-size: 13px !important;
+}
+
+.online-branch-action-link-style {
+    color: "#3bbdf5";
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.online-branch-table .online-branch-header-cell-style {
+    padding: 4px;
+    line-height: 1.2;
+    font-size: 11px;
+    color: #ffffff !important;
+    background-color: #0075be !important;
+}
