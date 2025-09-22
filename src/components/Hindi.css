@@ -1,0 +1,41 @@
+.branch-2-table .table-list .cell-style {
+    padding: "4px";
+    line-height: 1.2;
+    font-size: 11px;
+}
+
+.zone-1-search .zone-1-form-submit-style,
+.branch-2-table-actions .zone-1-form-submit-style {
+    padding: 7px;
+    line-height: 1.2;
+    font-size: 13px;
+    background-color: #0075be !important;
+}
+
+.hindi-branch-2-new {
+    padding: 7px !important;
+    line-height: 1.2 !important;
+    font-size: 13px !important;
+}
+
+.container-border-style {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.zone-1-action-link-style {
+    color: "#3bbdf5";
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.branch-2-table .zone-1-header-cell-style {
+    padding: 4px;
+    line-height: 1.2;
+    font-size: 11px;
+    color: #ffffff !important;
+    background-color: #0075be !important;
+}
