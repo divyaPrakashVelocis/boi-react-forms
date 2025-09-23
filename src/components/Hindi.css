@@ -1,0 +1,43 @@
+.kri-domestic-table .table-list .cell-style,
+.pagination .cell-style {
+    padding: "4px";
+    line-height: 1.2;
+    font-size: 11px;
+    /* word-break: "break-word";
+  max-width: "200px"; 
+  min-width: "100px"; */
+}
+
+.kri-domestic-search .kri-domestic-form-submit-style,
+.kri-domestic-table-actions .kri-domestic-form-submit-style {
+    padding: 9px;
+    line-height: 1.2;
+    font-size: 13px;
+    background-color: #0075be !important;
+}
+
+.kri-domestic-form-style {
+    padding: 9px !important;
+    line-height: 1.2 !important;
+    font-size: 13px !important;
+}
+
+.kri-domestic-action-link-style {
+    color: "#3bbdf5";
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.kri-domestic-table .kri-domestic-header-cell-style {
+    padding: 4px;
+    line-height: 1.2;
+    font-size: 11px;
+    color: #ffffff !important;
+    background-color: #0075be !important;
+}
+
+.search-form .formStyle {
+    padding: "9px" !important;
+    line-height: "1.2" !important;
+    font-size: "13px" !important;
+}
